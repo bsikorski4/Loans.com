@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+
+.header .container {
+    font-family: 'Montserrat', sans-serif;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.page-logo {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+
+.page-nav-list {
+    display: flex;
+}
+
+a {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+li:first-child a {
+    margin-right: 40px;
+}
+
+li:nth-child(2) a {
+    margin-right: 40px;
+}
+
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.main__intro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.info__small-heading {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.info__heading {
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1em;
+
+}
+
+.info__icons {
+    display: flex;
+    margin-top: 60px;
+}
+
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 150px;
+}
+.item__text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.icons__item:first-child {
+    margin-left: 0;
+}
+
+.icons__item::before {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+
+.icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+
+.icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+
+.intro__form {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .13);
+}
+
+.intro__form .form__heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form__field {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__field label {
+    margin-bottom: 5px;
+
+}
+
+.form__field .form__input {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0;
+
+}
+
+.form__input::placeholder {
+    opacity: 0.5;
+}
+
+.form__button {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 20px 30px;
+    margin-top: 20px;
+
+}
